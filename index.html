@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>1997 - YUERONG_WANG</title>
+    <title>Birthday!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
@@ -13,8 +13,8 @@
 
         body {
             font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-            background: #79a8ae;
-            color: #CFEBE4;
+            background: #ffddc5;
+            color: #f3e6d8;
             font-size: 18px;
             line-height: 2;
             letter-spacing: 1.2px;
@@ -22,7 +22,7 @@
         }
 
         a {
-            color: #ebf7f4;
+            color: #fffaef;
         }
 
         .body--ready {
@@ -102,8 +102,8 @@
     <img src="http://od2xrf8gr.bkt.clouddn.com/girl.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
-<p class="text" style="color: #ed3073;">
-    We fell in love
+<p class="text" style="color: #000000;">
+    Its been since you were born!
     <br/>
     <span id="span_dt_dt"></span>
 </p>
@@ -123,7 +123,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "days" + hrsold + "hours" + minsold + "minutes" + seconds + "seconds";
+        span_dt_dt.innerHTML = daysold + ":" + hrsold + ":" + minsold + ":" + seconds + ":";
     }
 
     show_date_time();
