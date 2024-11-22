@@ -127,7 +127,7 @@
 
 <body>
 <div class="cs">
-    <img src="img2.png" id="logo">
+    <img src="http://od2xrf8gr.bkt.clouddn.com/girl.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #000000;">
@@ -203,6 +203,7 @@
             adjustCanvas: function () {
                 canvas.width = window.innerWidth - 100;
                 canvas.height = window.innerHeight - 30;
+                this.clearFrame();  // Clear the frame after resizing
             },
             clearFrame: function () {
                 context.clearRect(0, 0, canvas.width, canvas.height);
@@ -274,10 +275,9 @@
                 value = getValue(current);
 
                 switch (action) {
+                    case 'show':
+                        break;
                     case 'countdown':
-                        value = parseInt(value) || 10;
-                        value = value > 0 ? value : 10;
-
                         timedAction(function (a) {
                             S.Shape.countdown(a);
                         }, 1000, value);
@@ -299,6 +299,9 @@
             }
         };
     }());
+
+    S.init();
 </script>
+
 </body>
 </html>
